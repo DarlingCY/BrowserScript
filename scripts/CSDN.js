@@ -22,7 +22,7 @@
         let self = all[i]
         self.parentElement.removeChild(self)
     }
-    //博文内容
+    //博文内容居中
     let contentMainBox = document.getElementById("mainBox")
     contentMainBox.style.display = "flex"
     contentMainBox.style.justifyContent = "center"
