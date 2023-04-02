@@ -3,7 +3,7 @@
 // @namespace   https://blog.csdn.net/*
 // @match       https://blog.csdn.net/*
 // @grant       none
-// @version     0.4
+// @version     0.5
 // @author      13号寄信人
 // @description 净化CSDN
 // @license     MIT
@@ -26,4 +26,12 @@
     let contentMainBox = document.getElementById("mainBox")
     contentMainBox.style.display = "flex"
     contentMainBox.style.justifyContent = "center"
+
+    //------------------------移动端------------------------
+    let mobileAll=[]
+    mobileAll.push(...document.getElementsByClassName('guide-box'))
+    for (let i = 0; i < mobileAll.length; i++) {
+        let self = mobileAll[i]
+        self.parentElement.removeChild(self)
+    }
 })();
