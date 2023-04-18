@@ -3,7 +3,7 @@
 // @namespace   https://juejin.cn/*
 // @match       https://juejin.cn/*
 // @grant       none
-// @version     0.1
+// @version     0.2
 // @author      13号寄信人
 // @description 净化掘金
 // @license     MIT
@@ -11,20 +11,55 @@
 
 (function () {
     'use strict';
-    let all = []
-    //博文底部插件推广
-    all.push(...document.getElementsByClassName('recommend-box'))
-    all.push(...document.getElementsByClassName('global-component-box'))
-    all.push(...document.getElementsByClassName('article-end'))
-    for (let i = 0; i < all.length; i++) {
-        let self = all[i]
-        self.parentElement.removeChild(self)
+
+    appendStyle(buildCss())
+
+    function buildCss() {
+        if (browserDetection() !== "PC") {
+            //------------------------移动端------------------------
+            return ``
+        } else {
+            //------------------------桌面端------------------------
+            return `
+        .recommend-box .global-component-box .article-end {
+            display: none !important;
+        }
+        .view {
+            display: flex !important;
+            justfy-content: center !important;
+        }
+        `
+        }
     }
 
+    function appendStyle(css) {
+        let styleNode = document.createElement("style");
+        styleNode.appendChild(document.createTextNode(css));
+        (document.querySelector("head") || document.documentElement).appendChild(styleNode);
+    }
 
-    //-----样式-----
-    //博文居中
-    let view = document.getElementsByClassName('view')[0]
-    view.style.display = 'flex'
-    view.style.justifyContent = 'center'
+    function browserDetection() {
+        const userAgent = window.navigator.userAgent.toLowerCase();
+        let browser = null;
+        if (userAgent.match(/ipad/i)) {
+            browser = 'ipad';
+        } else if (userAgent.match(/iphone os/i)) {
+            browser = 'iphone';
+        } else if (userAgent.match(/midp/i)) {
+            browser = 'midp'
+        } else if (userAgent.match(/rv:1.2.3.4/i)) {
+            browser = 'rv:1.2.3.4';
+        } else if (userAgent.match(/ucweb/i)) {
+            browser = 'ucweb';
+        } else if (userAgent.match(/android/i)) {
+            browser = 'android';
+        } else if (userAgent.match(/windows ce/i)) {
+            browser = 'windowsCe';
+        } else if (userAgent.match(/windows mobile/i)) {
+            browser = 'windowsMobile';
+        } else {
+            browser = 'PC'
+        }
+        return browser;
+    }
 })();
