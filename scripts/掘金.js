@@ -21,7 +21,13 @@
         } else {
             //------------------------桌面端------------------------
             return `
-        .recommend-box .global-component-box .article-end {
+        .recommend-box {
+            display: none !important;
+        }
+        .global-component-box {
+            display: none !important;
+        }
+        .article-end {
             display: none !important;
         }
         .view {
