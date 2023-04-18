@@ -3,7 +3,7 @@
 // @namespace   https://juejin.cn/*
 // @match       https://juejin.cn/*
 // @grant       none
-// @version     0.5.0
+// @version     0.5.1
 // @author      13号寄信人
 // @description 净化掘金
 // @license     MIT
@@ -33,9 +33,6 @@
             display: none !important;
         }
         .article-suspended-panel {
-            display: none !important;
-        }
-        .global-component-box {
             display: none !important;
         }
         .article-end {
