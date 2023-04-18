@@ -3,7 +3,7 @@
 // @namespace   https://juejin.cn/*
 // @match       https://juejin.cn/*
 // @grant       none
-// @version     0.4.0
+// @version     0.4.1
 // @author      13号寄信人
 // @description 净化掘金
 // @license     MIT
@@ -17,9 +17,11 @@
     function buildCss() {
         if (browserDetection() !== "PC") {
             //------------------------移动端------------------------
+            console.log("Not PC")
             return ``
         } else {
             //------------------------桌面端------------------------
+            console.log("Is PC")
             return `
         .recommend-box {
             display: none !important;
