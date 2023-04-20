@@ -22,7 +22,7 @@
             display: none !important;
         }
         .article_content{
-        height:auto !important;
+            height:auto !important;
         }
         `
         } else {
@@ -33,7 +33,7 @@
         }
         #mainBox {
             display: flex !important;
-            justfy-content: center !important;
+            justify-content: center !important;
         }
         `
         }
