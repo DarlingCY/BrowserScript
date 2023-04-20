@@ -23,22 +23,7 @@
             //------------------------桌面端------------------------
             console.log("Is PC")
             return `
-        .recommend-box {
-            display: none !important;
-        }
-        .sidebar > a {
-            display: none !important;
-        }
-        .sidebar > .sidebar-bd-entry {
-            display: none !important;
-        }
-        .article-suspended-panel {
-            display: none !important;
-        }
-        .article-end {
-            display: none !important;
-        }
-        .category-course-recommend {
+        .recommend-box , .sidebar > a , .sidebar > .sidebar-bd-entry , .article-suspended-panel , .article-end , .category-course-recommend {
             display: none !important;
         }
         `
