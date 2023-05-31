@@ -3,7 +3,7 @@
 // @namespace   https://www.jianshu.com/*
 // @match       https://www.jianshu.com/*
 // @grant       none
-// @version     0.0.1
+// @version     0.0.2
 // @author      13号寄信人
 // @description 净化简书
 // @license     MIT
@@ -23,7 +23,7 @@
             //------------------------桌面端------------------------
             console.log("Is PC")
             return `
-        ._2OwGUo , ._3Pnjry , .ouvJEz:nth-child(2) , footer {
+        ._2OwGUo , ._3Pnjry , .ouvJEz:nth-child(2) , footer , .d0hShY , ._13lIbp , ._19DgIp {
             display: none !important;
         }
         ._gp-ck {
