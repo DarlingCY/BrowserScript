@@ -3,7 +3,7 @@
 // @namespace   https://www.jianshu.com/*
 // @match       https://www.jianshu.com/*
 // @grant       none
-// @version     0.0.2
+// @version     0.0.3
 // @author      13号寄信人
 // @description 净化简书
 // @license     MIT
@@ -18,7 +18,11 @@
         if (browserDetection() !== "PC") {
             //------------------------移动端------------------------
             console.log("Not PC")
-            return ``
+            return `
+        .call-app-Ad-bottom , #footer , .recommend-ad , #lwaAdFive , .note-graceful-button , #free-reward-panel , #comment-main ,.call-app-Ad-bottom , iframe{
+            display: none !important;
+        }
+        `
         } else {
             //------------------------桌面端------------------------
             console.log("Is PC")
