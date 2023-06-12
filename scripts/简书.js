@@ -3,7 +3,7 @@
 // @namespace   https://www.jianshu.com/*
 // @match       https://www.jianshu.com/*
 // @grant       none
-// @version     0.0.4
+// @version     0.0.5
 // @author      13号寄信人
 // @description 净化简书
 // @license     MIT
@@ -23,7 +23,7 @@
             display: none !important;
         }
         .collapse-free-content {
-            height: 100%; !important;
+            height: 100% !important;
         }
         `
         } else {
