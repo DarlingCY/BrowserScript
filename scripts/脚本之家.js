@@ -3,7 +3,7 @@
 // @namespace   https://www.jb51.net/*
 // @match       https://www.jb51.net/*
 // @grant       none
-// @version     0.0.1
+// @version     0.0.2
 // @author      13号寄信人
 // @description 净化脚本之家
 // @license     MIT
@@ -35,7 +35,7 @@
 
     function articlePathRule() {
         return `
-        .pt10 , .r300 , .logor , .logom , .lbd , #i009b {
+        .pt10 , .r300 , .logor , .logom , .lbd , #i009b , .lbd_bot {
             display: none !important;
         }
         `
