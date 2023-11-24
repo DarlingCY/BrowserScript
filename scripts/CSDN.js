@@ -3,7 +3,7 @@
 // @namespace   https://blog.csdn.net/*
 // @match       https://blog.csdn.net/*
 // @grant       none
-// @version     0.6.3
+// @version     0.6.4
 // @author      13号寄信人
 // @description 净化CSDN
 // @license     MIT
@@ -32,12 +32,15 @@
         } else {
             //------------------------桌面端------------------------
             return `
-        .blog_container_aside , #rightAside , .csdn-side-toolbar {
+        .blog_container_aside , #rightAside , .csdn-side-toolbar , .csdn-toolbar-creative-mp-bg {
             display: none !important;
         }
         #mainBox {
             display: flex !important;
             justify-content: center !important;
+        }
+        .container {
+            margin-right: 0 !important;
         }
         `
         }
