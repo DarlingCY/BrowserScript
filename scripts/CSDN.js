@@ -3,7 +3,7 @@
 // @namespace   https://blog.csdn.net/*
 // @match       https://blog.csdn.net/*
 // @grant       none
-// @version     0.6.4
+// @version     0.6.5
 // @author      13号寄信人
 // @description 净化CSDN
 // @license     MIT
