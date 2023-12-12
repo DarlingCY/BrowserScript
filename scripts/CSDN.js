@@ -32,7 +32,7 @@
         } else {
             //------------------------桌面端------------------------
             return `
-        .blog_container_aside , #rightAside , .csdn-side-toolbar , .csdn-toolbar-creative-mp-bg {
+        .blog_container_aside , #rightAside , .csdn-side-toolbar , .csdn-toolbar-creative-mp-bg , .toolbar-advert {
             display: none !important;
         }
         #mainBox {
